@@ -1,0 +1,59 @@
+/* PERSONAL SITE - /styles/default.css */
+
+body {
+  margin: 0;
+  background: #f6f7fb;        
+  color: #1a1a1a;             
+  font-family: Arial, Helvetica, sans-serif;  
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 900px;           
+  margin: 0 auto;            
+  padding: 16px;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 2px solid #d9dbe7;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  font-family: "Georgia", "Times New Roman", serif; 
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+nav a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background: #ffffff;
+  border: 1px solid #d9dbe7;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #d9dbe7;
+}
+
+footer {
+  color: #444;
+  font-size: 0.95rem;
+  border-top: 2px solid #d9dbe7;
+}
