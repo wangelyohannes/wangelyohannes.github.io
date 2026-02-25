@@ -3,20 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="styles/default.css" />
+
     <script
       src="https://lint.page/kit/4d0fe3.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Playing Cards</title>
+
+    <style>
+      #playing-cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        margin-top: 1.5rem;
+      }
+
+      #playing-cards .card {
+        width: 260px;
+        height: 360px;
+
+        display: flex;
+        justify-content: space-between;
+
+        background: #ffffff;
+        border: 1px solid #d9dbe7;
+        border-radius: 12px;
+
+        padding: 14px;
+        box-sizing: border-box;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+
+        color: #1a1a1a;
+      }
+
+      #playing-cards .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      #playing-cards .left {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      #playing-cards .middle {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        gap: 14px;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+      }
+
+      #playing-cards .right {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1;
+        transform: rotate(180deg);
+      }
+
+      #playing-cards .red {
+        color: #c1121f;
+      }
+    </style>
   </head>
+
   <body>
     <div data-include="components/header.html"></div>
+
     <main>
       <h2>Playing Cards</h2>
-      <p>Playing cards content will go here.</p>
+
+      <div id="playing-cards">
+        <div class="card">
+          <div class="left"><span>A</span><span>♠</span></div>
+          <div class="middle"><span>♠</span><span>♠</span></div>
+          <div class="right"><span>♠</span><span>A</span></div>
+        </div>
+
+        <div class="card red">
+          <div class="left"><span>2</span><span>♦</span></div>
+          <div class="middle"><span>♦</span><span>♦</span></div>
+          <div class="right"><span>♦</span><span>2</span></div>
+        </div>
+
+        <div class="card">
+          <div class="left"><span>4</span><span>♣</span></div>
+          <div class="middle"><span>♣♣</span><span>♣♣</span></div>
+          <div class="right"><span>♣</span><span>4</span></div>
+        </div>
+      </div>
     </main>
+
     <div data-include="components/footer.html"></div>
+
     <script src="scripts/HTMLInclude.min.js"></script>
   </body>
 </html>
