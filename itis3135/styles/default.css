@@ -56,8 +56,21 @@ img {
   border: 2px solid #d9dbe7;
 }
 
-footer {
-  color: #444;
-  font-size: 0.95rem;
-  border-top: 2px solid #d9dbe7;
+.footer-nav .footer-row {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0;
+  text-align: left;
+}
+
+.footer-nav .footer-row li {
+  display: inline;
+}
+
+.footer-nav .footer-row li:not(:last-child)::after {
+  content: " | ";
+}
+
+.footer-copy {
+  margin-top: 8px;
 }
