@@ -4,18 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/product.css" />
     <script
       src="https://lint.page/kit/4d0fe3.js"
       crossorigin="anonymous"
     ></script>
     <title>Product Landing Page</title>
   </head>
+
   <body>
     <div data-include="components/header.html"></div>
-    <main>
-      <h2>Product Landing Page</h2>
-      <p>Product landing page content will go here.</p>
+
+    <header id="header" class="pl-header">
+      <div class="pl-brand">
+        <img
+          id="header-img"
+          src="https://toppng.com/uploads/preview/why-is-shonen-jumps-mascot-a-little-pirate-weekly-shonen-jump-logo-11563038533liiyokatii.png"
+          alt="Logo"
+        />
+        <div class="pl-brand-text">
+          <p class="pl-kicker">Wandering Yonko Manga Crate</p>
+          <p class="pl-subtitle">
+            Monthly drops for readers who move like a captain.
+          </p>
+        </div>
+      </div>
+
+      <nav id="nav-bar" class="pl-nav">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#watch">Watch</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <main class="pl-main">
+      <section class="pl-hero">
+        <h2 class="pl-hero-title">Your next arc starts here.</h2>
+        <p>
+          Curated manga picks, collector extras, and a clean guide so you don't
+          waste time on mid recommendations.
+        </p>
+
+        <form
+          id="form"
+          action="https://www.freecodecamp.org/email-submit"
+          class="pl-form"
+        >
+          <label class="pl-sr-only" for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email for the next drop..."
+            required
+          />
+          <input id="submit" type="submit" value="Get Early Access" />
+        </form>
+
+        <p class="pl-note">No spam. Only drop alerts + reading lists.</p>
+      </section>
+
+      <section id="features" class="pl-section">
+        <h2>Features</h2>
+
+        <div class="pl-feature-grid">
+          <div class="pl-card">
+            <h3>Curated Monthly Picks</h3>
+            <p>
+              A rotating blend of classics and new heat (Big Three energy +
+              modern style like Kagurabachi).
+            </p>
+          </div>
+
+          <div class="pl-card">
+            <h3>Collector Extras</h3>
+            <p>Stickers, bookmarks, mini art prints, figures, and merch.</p>
+          </div>
+
+          <div class="pl-card">
+            <h3>Reading Path Guide</h3>
+            <p>
+              A simple "where to start" guide so you don't get lost in 1,000
+              chapters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="watch" class="pl-section">
+        <h2>Watch</h2>
+        <p>
+          Official Teaser Trailer | BLEACH: Thousand-Year Blood War Final Part -
+          The Calamity.
+        </p>
+
+        <div class="pl-video-wrap">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQx"
+            title="Product Video"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="pricing" class="pl-section">
+        <h2>Pricing</h2>
+
+        <div class="pl-pricing">
+          <div class="pl-price-card">
+            <h3>Rookie Reader</h3>
+            <p class="pl-price">$5.99 / month</p>
+            <ul>
+              <li>1 manga volume</li>
+              <li>Reading guide</li>
+              <li>Basic extras</li>
+            </ul>
+            <button type="button">Select</button>
+          </div>
+
+          <div class="pl-price-card pl-featured">
+            <h3>Captain Pack</h3>
+            <p class="pl-price">$10.99 / month</p>
+            <ul>
+              <li>2 manga volumes</li>
+              <li>Collector extras</li>
+              <li>Priority drop email</li>
+            </ul>
+            <button type="button">Select</button>
+          </div>
+
+          <div class="pl-price-card">
+            <h3>Yonko Vault</h3>
+            <p class="pl-price">$16.99 / month</p>
+            <ul>
+              <li>3 manga volumes</li>
+              <li>Premium extras</li>
+              <li>Bonus "new arc" pick</li>
+            </ul>
+            <button type="button">Select</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="pl-footer-note">
+        <h2 class="pl-sr-only">Footer Note</h2>
+        <p>Built for the culture. Powered by reading stamina.</p>
+      </section>
     </main>
+
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
   </body>

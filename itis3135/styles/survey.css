@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+.survey-panel {
+  border: 1px solid #d9dbe7;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.survey-title {
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+}
+
+.survey-description {
+  margin: 0 0 14px 0;
+  color: #444;
+}
+
+.survey-form {
+  display: block;
+}
+
+.survey-fieldset {
+  border: 1px solid #d9dbe7;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 0 0 14px 0;
+  background-image: linear-gradient(
+    135deg,
+    rgba(246, 247, 251, 1),
+    rgba(246, 247, 251, 0.6)
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.survey-legend {
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #d9dbe7;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  float: none;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  display: block;
+  padding: 12px;
+  border: 1px solid #d9dbe7;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font: inherit;
+}
+
+select {
+  cursor: pointer;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.survey-question {
+  margin: 14px 0 8px 0;
+  font-weight: 700;
+}
+
+.survey-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.survey-option input[type="radio"],
+.survey-option input[type="checkbox"] {
+  margin: 0;
+  width: auto;
+}
+
+.survey-submit {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d9dbe7;
+  background-color: #1d70a2;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.survey-submit:hover {
+  filter: brightness(1.05);
+}
+
+.survey-footnote {
+  margin-top: 10px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .survey-panel {
+    padding: 12px;
+  }
+
+  .survey-fieldset {
+    padding: 12px;
+  }
+}

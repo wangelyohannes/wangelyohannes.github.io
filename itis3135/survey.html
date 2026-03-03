@@ -3,19 +3,195 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ITIS3135 | Survey</title>
+
     <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/survey.css" />
     <script
       src="https://lint.page/kit/4d0fe3.js"
       crossorigin="anonymous"
     ></script>
-    <title>Survey Form</title>
   </head>
+
   <body>
     <div data-include="components/header.html"></div>
+
     <main>
-      <h2>Survey Form</h2>
-      <p>Survey form content will go here.</p>
+      <h2>Survey</h2>
+
+      <section class="survey-panel">
+        <h3 id="title" class="survey-title">
+          Wandering Yonko Manga Crate Feedback Survey
+        </h3>
+        <p id="description" class="survey-description">
+          Help us improve the crate. Tell us what you’d actually want from the
+          membership tiers, what products to add, and what would make the drops
+          feel worth it. This takes about a minute.
+        </p>
+
+        <form id="survey-form" class="survey-form" action="#" method="post">
+          <fieldset class="survey-fieldset">
+            <legend class="survey-legend">Contact</legend>
+
+            <label id="name-label" for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label id="email-label" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label id="number-label" for="number"
+              >How many volumes do you read per month? (0–40)</label
+            >
+            <input
+              id="number"
+              name="volumes"
+              type="number"
+              min="0"
+              max="40"
+              placeholder="e.g., 4"
+            />
+          </fieldset>
+
+          <fieldset class="survey-fieldset">
+            <legend class="survey-legend">Membership Tier</legend>
+
+            <label for="dropdown">Which tier are you most likely to buy?</label>
+            <select id="dropdown" name="tier" required>
+              <option value="" selected disabled>Select a tier</option>
+              <option value="rookie">Rookie Reader (1 volume + basics)</option>
+              <option value="captain">
+                Captain Pack (2 volumes + collector extras)
+              </option>
+              <option value="yonko">
+                Yonko Vault (3 volumes + premium extras)
+              </option>
+              <option value="none">Not sure / not interested</option>
+            </select>
+
+            <p class="survey-question">
+              If you joined, what would be the #1 reason?
+            </p>
+            <label class="survey-option">
+              <input type="radio" name="reason" value="discovery" required />
+              Discovery — I want new series recommendations
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="reason" value="collector" />
+              Collector extras — prints, stickers, bookmarks, etc.
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="reason" value="convenience" />
+              Convenience — I want the crate to pick for me
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="reason" value="community" />
+              Community — I want discussion + monthly themes
+            </label>
+          </fieldset>
+
+          <fieldset class="survey-fieldset">
+            <legend class="survey-legend">What Should We Add?</legend>
+
+            <p class="survey-question">
+              What products/extras would make the crate feel more worth it?
+              (choose all that apply)
+            </p>
+
+            <label class="survey-option">
+              <input type="checkbox" name="extras" value="alt-covers" />
+              Exclusive / alternate covers
+            </label>
+            <label class="survey-option">
+              <input type="checkbox" name="extras" value="art-prints" />
+              Art prints (high quality, not cheap posters)
+            </label>
+            <label class="survey-option">
+              <input type="checkbox" name="extras" value="mystery-figure" />
+              Mystery mini figure / keychain
+            </label>
+            <label class="survey-option">
+              <input type="checkbox" name="extras" value="reading-guide" />
+              Reading guide (where to start + arc highlights)
+            </label>
+            <label class="survey-option">
+              <input type="checkbox" name="extras" value="exclusive-discord" />
+              Members-only Discord / monthly watch party
+            </label>
+            <label class="survey-option">
+              <input type="checkbox" name="extras" value="merch" />
+              Minimal merch (clean designs only)
+            </label>
+
+            <p class="survey-question">
+              What should the monthly theme be based on?
+            </p>
+            <label class="survey-option">
+              <input type="radio" name="theme" value="genre" required />
+              Genre (shonen, seinen, sports, etc.)
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="theme" value="era" />
+              Era (90s classics, 2000s big hits, new-gen)
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="theme" value="vibe" />
+              Vibe (dark, funny, training arc, mind-games)
+            </label>
+            <label class="survey-option">
+              <input type="radio" name="theme" value="character" />
+              Character type (villains, captains, rivals)
+            </label>
+          </fieldset>
+
+          <fieldset class="survey-fieldset">
+            <legend class="survey-legend">Feedback</legend>
+
+            <label for="comments">
+              If you could change ONE thing about the crate to make it better,
+              what would it be?
+            </label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              placeholder="Be specific: pricing, volume count, better extras, different themes, etc..."
+            ></textarea>
+
+            <label for="requests">
+              Drop 1–3 series you want included (anime or manga)
+            </label>
+            <textarea
+              id="requests"
+              name="requests"
+              rows="3"
+              placeholder="Example: Bleach, One Piece, Vagabond..."
+            ></textarea>
+          </fieldset>
+
+          <button id="submit" type="submit" class="survey-submit">
+            Submit
+          </button>
+
+          <p class="survey-footnote">
+            This is a class project page — submissions are not stored.
+          </p>
+        </form>
+      </section>
     </main>
+
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
   </body>
