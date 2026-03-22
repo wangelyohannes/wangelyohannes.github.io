@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* ✅ FIXED GLOBAL BOX MODEL (removes width + padding warnings) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+main {
+  max-width: 900px;
+}
+
+/* FORM + OUTPUT CONTAINER */
+#intro-form,
+#output-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 1px solid #d9dbe7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  font-family: "Lato", "Times New Roman", sans-serif;
+}
+
+/* FIELDSETS */
+fieldset {
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #fafafa;
+}
+
+/* CLEAN LEGEND (no box look) */
+legend {
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #363636;
+  padding: 0;
+  background: transparent;
+  border: none;
+  margin-bottom: 0.75rem;
+}
+
+/* LABELS */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #363636;
+}
+
+/* INPUTS + TEXTAREAS (WARNING FIX APPLIED HERE) */
+input[type="text"],
+input[type="url"],
+input[type="date"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: "Lato", "Times New Roman", sans-serif;
+  font-size: 1rem;
+  background-color: #ffffff;
+  box-sizing: border-box; /* ✅ critical fix */
+}
+
+/* TEXTAREA */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #363636;
+  box-shadow: 0 0 5px rgba(54, 54, 54, 0.3);
+}
+
+/* DYNAMIC ROWS */
+.course-entry,
+.link-entry {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* FLEX INPUTS */
+.course-entry input,
+.link-entry input {
+  flex: 1;
+  margin-top: 0;
+}
+
+/* BUTTONS */
+button {
+  background-color: #363636;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Lato", "Times New Roman", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+/* DELETE BUTTONS */
+.delete-course-btn,
+.delete-link-btn {
+  background-color: #d9534f;
+  margin-top: 0;
+}
+
+.delete-course-btn:hover,
+.delete-link-btn:hover {
+  background-color: #c9302c;
+}
+
+/* FORM CONTROLS */
+.form-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px solid #eeeeee;
+}
+
+/* SPACING FIXES */
+#quote {
+  margin-bottom: 14px;
+}
+
+#quote-author {
+  margin-bottom: 22px;
+}
+
+#links-container {
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+/* OUTPUT STYLING */
+#output-container a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#output-container a:hover {
+  text-decoration: underline;
+}
+
+#output-container figure {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#output-container img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+#output-container blockquote {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #363636;
+  font-style: italic;
+  border-left: 4px solid #363636;
+  padding-left: 15px;
+}
+
+#output-container p,
+#output-container li {
+  line-height: 1.6;
+}
+
+#output-container pre {
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 800px) {
+  .course-entry,
+  .link-entry {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-controls {
+    flex-direction: column;
+  }
+
+  .form-controls button {
+    width: 100%;
+  }
+}
