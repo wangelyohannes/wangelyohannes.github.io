@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoryGate | Contact</title>
+    <link rel="stylesheet" href="../styles/project.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>StoryGate</h1>
+        <p class="tagline">
+          A discovery guide for anime, manga, and fictional media.
+        </p>
+
+        <nav aria-label="Primary Navigation" class="site-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="genres.html">Genres</a></li>
+            <li><a href="beginner-guide.html">Beginner Guide</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="page-heading">
+        <h2>Contact</h2>
+        <p>
+          This page gives users a way to suggest titles, request
+          recommendations, or send feedback about the site.
+        </p>
+      </section>
+
+      <section class="form-panel">
+        <h3 class="sr-only">Contact Form</h3>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest">
+            <option value="beginner">Beginner recommendations</option>
+            <option value="genre">Genre help</option>
+            <option value="manga">Manga suggestions</option>
+            <option value="anime">Anime suggestions</option>
+            <option value="feedback">General feedback</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Designed and developed by Yohannes Digital.</p>
+      </div>
+    </footer>
+
+    <script src="https://lint.page/kit/4d0fe3.js"></script>
+  </body>
+</html>
