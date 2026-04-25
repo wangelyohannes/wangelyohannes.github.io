@@ -39,6 +39,35 @@
         </p>
       </section>
 
+      <section class="filter-panel">
+        <h3>Filter recommendations</h3>
+        <div class="filter-controls">
+          <button
+            type="button"
+            class="filter-button active-filter"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button type="button" class="filter-button" data-filter="beginner">
+            Beginner
+          </button>
+          <button
+            type="button"
+            class="filter-button"
+            data-filter="intermediate"
+          >
+            Intermediate
+          </button>
+          <button type="button" class="filter-button" data-filter="action">
+            Action
+          </button>
+          <button type="button" class="filter-button" data-filter="mystery">
+            Mystery
+          </button>
+        </div>
+      </section>
+
       <section class="section-heading">
         <h3>Beginner-Friendly Picks</h3>
         <p>
@@ -49,10 +78,11 @@
 
       <section class="recommendation-grid">
         <h3 class="sr-only">Beginner-Friendly Picks</h3>
-        <article class="recommendation-card">
+
+        <article class="recommendation-card beginner action">
           <img
             src="../images/fullmetal-alchemist-brotherhood.webp"
-            alt="Notebook and digital workspace representing organized storytelling"
+            alt="Fullmetal Alchemist Brotherhood recommendation"
           />
           <h4>Fullmetal Alchemist: Brotherhood</h4>
           <p><strong>Genre:</strong> Action / Fantasy</p>
@@ -65,11 +95,8 @@
           </p>
         </article>
 
-        <article class="recommendation-card">
-          <img
-            src="../images/deathnote.jpg"
-            alt="Dark monitor setup representing suspense and tension"
-          />
+        <article class="recommendation-card beginner mystery">
+          <img src="../images/deathnote.jpg" alt="Death Note recommendation" />
           <h4>Death Note</h4>
           <p><strong>Genre:</strong> Mystery / Thriller</p>
           <p><strong>Tone:</strong> Dark, tense, analytical</p>
@@ -80,11 +107,8 @@
           </p>
         </article>
 
-        <article class="recommendation-card">
-          <img
-            src="../images/2090_original.jpg"
-            alt="Athletic visuals representing sports and momentum"
-          />
+        <article class="recommendation-card beginner">
+          <img src="../images/2090_original.jpg" alt="Haikyuu recommendation" />
           <h4>Haikyuu!!</h4>
           <p><strong>Genre:</strong> Sports</p>
           <p><strong>Tone:</strong> Energetic, uplifting, competitive</p>
@@ -105,25 +129,26 @@
 
       <section class="recommendation-grid">
         <h3 class="sr-only">Popular Gateway Series</h3>
-        <article class="recommendation-card">
+
+        <article class="recommendation-card intermediate action mystery">
           <img
             src="../images/attack-on-titan-final.webp"
-            alt="Notebook and digital workspace representing organized storytelling"
+            alt="Attack on Titan recommendation"
           />
           <h4>Attack on Titan</h4>
           <p><strong>Genre:</strong> Action / Mystery</p>
           <p><strong>Tone:</strong> Intense, dark, suspenseful</p>
-          <p><strong>Level:</strong> Intermediate Beginner</p>
+          <p><strong>Level:</strong> Intermediate</p>
           <p>
             A popular gateway because it hooks viewers quickly and keeps tension
             high while expanding its world over time.
           </p>
         </article>
 
-        <article class="recommendation-card">
+        <article class="recommendation-card beginner action">
           <img
             src="../images/demon-slayer-roar-of-victory-poster.avif"
-            alt="Dark monitor setup representing suspense and tension"
+            alt="Demon Slayer recommendation"
           />
           <h4>Demon Slayer</h4>
           <p><strong>Genre:</strong> Action / Fantasy</p>
@@ -135,10 +160,10 @@
           </p>
         </article>
 
-        <article class="recommendation-card">
+        <article class="recommendation-card intermediate action">
           <img
             src="../images/JJK-header-mobile2.webp"
-            alt="Notebook and digital workspace representing organized storytelling"
+            alt="Jujutsu Kaisen recommendation"
           />
           <h4>Jujutsu Kaisen</h4>
           <p><strong>Genre:</strong> Action / Supernatural</p>
@@ -160,10 +185,11 @@
 
       <section class="recommendation-grid">
         <h3 class="sr-only">Hidden Gems</h3>
-        <article class="recommendation-card">
+
+        <article class="recommendation-card intermediate mystery">
           <img
             src="../images/odd-taxi-blogroll-1663003695432.jpg"
-            alt="Notebook and digital workspace representing organized storytelling"
+            alt="Odd Taxi recommendation"
           />
           <h4>Odd Taxi</h4>
           <p><strong>Genre:</strong> Mystery / Drama</p>
@@ -175,11 +201,8 @@
           </p>
         </article>
 
-        <article class="recommendation-card">
-          <img
-            src="../images/barakamon.webp"
-            alt="Competitive imagery for sports storytelling"
-          />
+        <article class="recommendation-card beginner slice-life">
+          <img src="../images/barakamon.webp" alt="Barakamon recommendation" />
           <h4>Barakamon</h4>
           <p><strong>Genre:</strong> Slice of Life / Comedy</p>
           <p><strong>Tone:</strong> Relaxed, warm, reflective</p>
@@ -190,11 +213,8 @@
           </p>
         </article>
 
-        <article class="recommendation-card">
-          <img
-            src="../images/91Days.webp"
-            alt="Notebook and digital workspace representing organized storytelling"
-          />
+        <article class="recommendation-card intermediate mystery">
+          <img src="../images/91Days.webp" alt="91 Days recommendation" />
           <h4>91 Days</h4>
           <p><strong>Genre:</strong> Crime / Drama</p>
           <p><strong>Tone:</strong> Serious, focused, dramatic</p>
@@ -235,6 +255,7 @@
       </div>
     </footer>
 
+    <script src="../scripts/project.js"></script>
     <script src="https://lint.page/kit/4d0fe3.js"></script>
   </body>
 </html>

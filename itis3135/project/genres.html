@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StoryGate | Genres</title>
     <link rel="stylesheet" href="../styles/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <header class="site-header">
@@ -37,67 +41,66 @@
         </p>
       </section>
 
-      <section class="genre-grid">
-        <h3 class="sr-only">Genre Categories</h3>
-        <article class="genre-card">
+      <section id="genre-accordion" class="genre-accordion">
+        <h3 class="accordion-title">Action / Adventure</h3>
+        <div class="genre-panel">
           <img
             src="../images/best-action-anime.avif"
             alt="Bold visual representing action and energy"
           />
-          <h3>Action / Adventure</h3>
           <p>
             Focuses on movement, conflict, growth, and escalating stakes. These
             stories often have energetic pacing and memorable rivalries.
           </p>
           <p><strong>Examples:</strong> One Piece, Hunter x Hunter</p>
-        </article>
+        </div>
 
-        <article class="genre-card">
+        <h3 class="accordion-title">Romance</h3>
+        <div class="genre-panel">
           <img
             src="../images/romance.jpg"
             alt="Warm visual representing romance and emotional storytelling"
           />
-          <h3>Romance</h3>
           <p>
             Built around emotional development, chemistry, vulnerability, and
             character relationships. Some are lighthearted, while others lean
             dramatic.
           </p>
           <p><strong>Examples:</strong> Horimiya, Your Lie in April</p>
-        </article>
+        </div>
 
-        <article class="genre-card">
+        <h3 class="accordion-title">Mystery / Thriller</h3>
+        <div class="genre-panel">
           <img
             src="../images/triller.avif"
             alt="Mystery style visual with dark tones"
           />
-          <h3>Mystery / Thriller</h3>
           <p>
             These stories are driven by tension, hidden information, suspense,
             and the need to understand what is really happening.
           </p>
           <p><strong>Examples:</strong> Death Note, Monster</p>
-        </article>
+        </div>
 
-        <article class="genre-card">
+        <h3 class="accordion-title">Fantasy</h3>
+        <div class="genre-panel">
           <img
             src="../images/fantasy.avif"
-            alt="Notebook and digital workspace representing organized storytelling"
+            alt="Fantasy visual representing imagined worlds"
           />
-          <h3>Fantasy</h3>
           <p>
             Fantasy uses imagined worlds, magical systems, supernatural forces,
             and broader mythic or adventure-driven storytelling.
           </p>
           <p><strong>Examples:</strong> Fullmetal Alchemist, Frieren</p>
-        </article>
+        </div>
 
-        <article class="genre-card">
+        <h3 class="accordion-title">Slice of Life</h3>
+        <div class="genre-panel">
           <img
             src="../images/slice-of-life-top.jpg"
             alt="Calmer visual for slice of life stories"
           />
-          <h3>Slice of Life</h3>
           <p>
             More grounded and atmosphere-driven, often focusing on daily
             routines, smaller emotional moments, and character interaction.
@@ -105,20 +108,20 @@
           <p>
             <strong>Examples:</strong> Barakamon, March Comes in Like a Lion
           </p>
-        </article>
+        </div>
 
-        <article class="genre-card">
+        <h3 class="accordion-title">Sports / Competition</h3>
+        <div class="genre-panel">
           <img
             src="../images/best-sports-.avif"
             alt="Competitive imagery for sports storytelling"
           />
-          <h3>Sports / Competition</h3>
           <p>
             Centers on improvement, rivalry, teamwork, and personal growth.
             These are often very motivating and accessible for new viewers.
           </p>
           <p><strong>Examples:</strong> Haikyuu!!, Blue Lock</p>
-        </article>
+        </div>
       </section>
     </main>
 
@@ -128,6 +131,9 @@
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="../scripts/project.js"></script>
     <script src="https://lint.page/kit/4d0fe3.js"></script>
   </body>
 </html>

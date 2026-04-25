@@ -280,6 +280,60 @@ textarea {
   padding: 1rem 0;
 }
 
+.filter-panel {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.active-filter {
+  background: #f8fafc;
+  color: #111827;
+}
+
+.genre-accordion {
+  margin-bottom: 2rem;
+}
+
+.accordion-title {
+  background: #111827;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  padding: 1rem;
+  margin: 0.5rem 0 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.genre-panel {
+  background: #111827;
+  border: 1px solid #334155;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.genre-panel img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.ui-widget-content {
+  color: #e5e7eb;
+}
+
 @media (max-width: 950px) {
   .card-grid .card,
   .recommendation-grid .recommendation-card,
